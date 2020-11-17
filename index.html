@@ -35,7 +35,7 @@
 
     <div class="container">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">               
+            <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
                     Home
                 </li>
@@ -63,70 +63,128 @@
         </div>
 
         <div class="d-flex flex-wrap flex-row-reverse">
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Barcelona</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Barcelona</h5>
+                    <h6 class="card-subtitle">España</h6>
+                    <img class="card-img-top" src="imagenes/hotel_barcelona.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa
+                        y del monumento de Cristobal Colon
+                    </p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" >Contacto</button> 
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Monaco</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Monaco</h5>
+                    <h6 class="card-subtitle">Italia</h6>
+                    <img class="card-img-top" src="imagenes/hotel_monaco.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Monaco a pocos metros de la playa
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Buenos Aires</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Buenos Aires</h5>
+                    <h6 class="card-subtitle">Argentina</h6>
+                    <img class="card-img-top" src="imagenes/hotel_buenosAires.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Buenos Aires
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Madrid</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Madrid</h5>
+                    <h6 class="card-subtitle">España</h6>
+                    <img class="card-img-top" src="imagenes/hotel_madrid.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Madrid
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Berlin</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Berlin</h5>
+                    <h6 class="card-subtitle">Alemania</h6>
+                    <img class="card-img-top" src="imagenes/hotel_berlin.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Berlin a pocos metros del antiguo Reigtch
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Londres</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Londres</h5>
+                    <h6 class="card-subtitle">Inglaterra</h6>
+                    <img class="card-img-top" src="imagenes/hotel_monaco.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Londres con vista panoramica de la ciudad
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
-            <div class="card_hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Moscu</h4>
-                    <p>Hotel ubicado en pleno centro de Barcelos a pocos metros de la playa</p>
+
+            <div class="card card_hotel d-flex flex-column justify-content-between">
+                <div class="car-body">
+                    <h5 class="cad-title">Hotel Moscu</h5>
+                    <h6 class="card-subtitle">Rusia</h6>
+                    <img class="card-img-top" src="imagenes/hotel_moscu.jpg">
+                    <p class="card-text">Hotel ubicado en pleno centro de Moscu frente a Kremlin y Plaza Roja
+                    </p>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exapleModalLabel">Contacto del Hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer>
@@ -160,3 +218,17 @@
 </body>
 
 </html>
+
+<!--
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-success">Enviar</button>
+</div>
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+...
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
+Thanks God ,Today is Friday 
+....
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
+
+-->
