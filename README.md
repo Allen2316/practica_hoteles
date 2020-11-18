@@ -1,5 +1,5 @@
 # Practicas
 Practicas por: Luis Sarmiento Cuenca   
-Breanchs:
+Branchs:
 - main (PracticaHoteles)
 
