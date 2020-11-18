@@ -41,26 +41,77 @@
                 </li>
             </ol>
         </nav>
-        <div class="d-flex flex-wrap flex-row">
+
+        <!-- inicio de collpase -->
+
+        <div class="d-flex  flex-row">
             <div class="col-sm-4">
-                <p>
-                <h3>¿Cómo funciona?</h3>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona"
+                    aria-controls="multiCollapse1">
+                    ¿Cómo funciona?
+                </button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-controls="multiCollapse2">
+                    ¿Dónde puedo reservar?
+                </button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
+                    aria-controls="multiCollapse3">
+                    ¿Cómo pago?
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="d-flex  flex-row">
+            <div class="col-sm-4 collapse " id="funciona">
                 <p>Búsca los hoteles de acuerdo a tu preferencia</p>
-                </p>
             </div>
-            <div class="col-sm-4">
-                <p>
-                <h3>¿Dónde puedo reservar?</h3>
+            <div class="col-sm-4 collapse " id="reserva">
                 <p>Elige la ciudad que te interesa y luego realiza la reserva con tus datos</p>
-                </p>
             </div>
-            <div class="col-sm-4">
-                <p>
-                <h3>¿Cómo pago?</h3>
+            <div class="col-sm-4 collapse " id="pago">
                 <p>Utiliza tu tarjeta favorita</p>
-                </p>
             </div>
         </div>
+
+
+
+
+
+
+
+        <!-- fin de collpase -->
+
+        <!-- empieza el carrucel -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4000">
+                    <img src="imagenes/hotel_berlin.jpg" class="d-block w-75" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <img src="imagenes/hotel_buenosAires.jpg" class="d-block w-75" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <img src="imagenes/hotel_londres.jpg" class="d-block w-75" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+
+        <!-- finaliza el carrucel -->
 
         <div class="d-flex flex-wrap flex-row-reverse">
             <div class="card card_hotel d-flex flex-column justify-content-between">
@@ -71,7 +122,8 @@
                     <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa
                         y del monumento de Cristobal Colon
                     </p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" >Contacto</button> 
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"
+                        id="contactoBtn">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn_reserva">Reservar</button>
@@ -218,17 +270,3 @@
 </body>
 
 </html>
-
-<!--
-
-<div class="modal-footer">
-    <button type="button" class="btn btn-success">Enviar</button>
-</div>
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
-...
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
-Thanks God ,Today is Friday 
-....
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
-
--->
